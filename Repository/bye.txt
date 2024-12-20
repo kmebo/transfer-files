@@ -1,0 +1,17 @@
+   break;
+        }
+        else if(y != 1){
+            break;
+        }else{
+            // Receive response from server
+            if (recv(sockd, buffer, 256, 0) == -1) {
+                perror("Receive failed");
+                exit(EXIT_FAILURE);
+            }
+            printf("Response from server: %s\n", buffer);
+
+            // Clear the buffer
+            memset(buffer, 0, 256);
+            // close(sockd);
+            x = 1;
+        }

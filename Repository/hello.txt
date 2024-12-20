@@ -1,0 +1,13 @@
+cd Downloads/hm2OS
+
+gcc server8.c
+
+./server8
+
+gcc Myclient5.c
+
+./Myclient5
+
+
+
+1 warning is generated when compiling the server file, but the code still runs.
